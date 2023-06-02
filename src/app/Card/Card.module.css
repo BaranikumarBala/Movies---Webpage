@@ -1,0 +1,93 @@
+.cardcontainer
+{
+    display: flex;
+    border:2px solid white;
+}
+.card
+{
+    width:200px;
+    height:300px;
+    border-radius:20px;
+    overflow: hidden;
+    border:2px solid #fff;
+    margin:40px 22px;
+    position: relative;
+}
+.card img
+{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.cardbody
+{
+    height:100%;
+    width:100%;
+    top:0;
+    right:0;
+    position: absolute;
+    background: #1f3d4738;
+    backdrop-filter: blur(5px);
+    border-radius:20px;
+    color:#fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1.5s;
+}
+.content
+{
+    display: flex;
+    width:45%;
+    justify-content: space-between;
+    align-items: center;
+    padding-left:10px;
+}
+.title
+{
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    font-weight: 700;
+    padding-left:10px;
+}
+.type, .year
+{
+    font-size: 12px;
+    font-weight: 300;
+}
+.about
+{
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.8px;
+    padding-left:10px;
+}
+.card:hover .cardbody
+{
+    right:-100%;
+}
+.btn
+{
+    position:absolute;
+    width:70%;
+    color:#fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    bottom:10px;
+    right:100%;
+    background: rgb(247, 5, 190);
+    border-radius: 25px;
+    padding:10px 20px;
+    border:none;
+    letter-spacing: 0.5px;  
+    transition: 1.5s;  
+}
+.card:hover .btn
+{
+    right:15%;
+}

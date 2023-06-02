@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+.container
+{
+    font-family: 'Roboto Slab', serif;
+    background:linear-gradient(180deg,#4b6cb7 10%, #182848 100%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+    padding:0;
+}
